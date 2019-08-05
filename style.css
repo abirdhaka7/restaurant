@@ -1,0 +1,644 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*========Header Section========*/
+#header{ 
+    padding: 10px 0;
+}
+#header .logo img{
+    width: 100%;
+    height: auto;
+}
+#header .header-social-content{
+    text-align: right;
+}
+#header .header-social-content .header-social-icon li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+#header .header-social-content .header-social-icon li a{
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+   
+}
+#header .header-social-content .header-social-text p{
+    padding-top: 10px;
+    font-size: 12px;
+}
+#header .navbar{
+    margin-top: 30px;
+}
+#header nav .navbar-nav{
+    margin: 0 auto;
+}
+#header .bg-light {
+    border-top: 1px solid #c1c1c1;
+    background-color: #fff !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 8rem;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #222;
+    font-size:18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*========Banner Section========*/
+#banner{
+    width: 100%;
+    height: auto;
+    background: url(assets/img/banner.jpg)no-repeat center center;
+}
+#banner .banner-overlay{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+#banner .banner-content{
+    color: #fff;
+    text-align: center;
+    padding: 140px 0; 
+}
+#banner .banner-content h2{
+    
+    font-size: 35px;
+    font-weight: 700;
+}
+#banner .banner-content p{
+    line-height: 3;
+    font-size: 18px;
+}
+#banner .banner-content a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    background: #f18f30;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+/*========Specialities Section========*/
+#specialties{
+    padding: 50px;
+    overflow: hidden;
+}
+#specialties h2{
+    text-align: center;
+    color: #bb1804;
+    font-weight:900;
+    padding: 10px;
+}
+.specialties-item{
+    /* width: 100%; */
+    position: relative;
+    overflow: hidden;
+}
+
+.specialties-item img{
+    width: 100%;
+    height: 300px;
+}
+.specialties-item:hover .specialties-content{
+    right: 0;
+    cursor: pointer;
+}
+.specialties-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -550px;
+    top: 0;
+    background: rgba(234,153,45,0.8);
+    transition: all 0.5s;
+    text-align: center;
+    color: #fff;
+}   
+.specialties-content h4{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 25%;
+}
+.specialties-content p{
+    font-size: 12px;
+    line-height: 3;
+}
+.specialties-content span{
+    font-size: 35px;
+    font-weight: 700;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+.specialties-content a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    background: #a61206;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: lowercase;
+}
+
+/*========Specialities Section========*/
+#food-section{
+    background: url(assets/img/food-section-background.jpg)no-repeat center  center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+#food-section .food-section-overlay{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+}
+#food-section .food-section-content{
+    margin-top: 35px;
+}
+#food-section .food-section-content h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+}
+#food-section .food-section-content p{
+    color: #fff;
+    line-height: 2.8;
+    margin-top: 60px;
+    font-size: 15px;
+}
+#food-section .food-section-content a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    background: #a61206;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: lowercase;
+    margin-top: 20px;
+    display: inline-block;
+}
+#food-section .food-section-img img{
+    max-width: 100%;
+}
+
+
+/*========Gallery Section========*/
+#gallery{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+#gallery h2{
+    text-align: center;
+    color: #bb1804;
+    font-weight:900;
+    padding: 20px;
+}
+.gallery-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: auto;
+  width: 100%;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption p:first-child{
+    font-weight: 700;
+    color: tomato;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.transparent-box {
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+  
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.9em;
+  font-weight: 500; 
+}
+
+.opacity-low {
+  opacity: 0.8;
+}
+
+/*========Contact Section========*/
+#contact{
+    padding: 10px;
+}
+#contact #map iframe{
+    width: 100%;
+    height: 660px;
+}
+#contact .reservation-form-content{
+    margin-top: 20px;
+    position: absolut;
+}
+#contact .reservation-form{
+    background: url(assets/img/food-section-background.jpg)no-repeat center;
+    position: relative;
+}
+
+#contact .contact-overlay{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#contact form{
+    padding: 75px 30px;
+}
+#contact .form-group{
+    margin-bottom: 20px;
+}
+#contact .reservation-form-text h2{
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+#contact .form-group ::-webkit-input-placeholder{
+    color: #fff;
+    opacity: 1; 
+}
+#contact .form-control{
+    border-radius: 0;
+    background-color: transparent;
+    color: #ffff;
+    border: 2px solid #fff;
+}
+#contact .form-group input[type=text]{
+    height: calc(3em + .75rem + 2px);
+    color: #fff;
+}
+#contact .form-control:focus {
+    box-shadow: none;
+}
+#contact form a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    background: #a61206;
+    padding: 10px 50px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/*========Footer Section========*/
+footer .footer-content{
+    border-top: 1.5px solid #c1c1c1;
+}
+footer .footer-menu{
+    margin-top: 25px;
+}
+footer .footer-menu ul{
+    text-align: center;
+}   
+footer .footer-menu ul li{
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    padding: 0 10px;
+    border-right: 2px solid #000;
+}
+footer .footer-content li:last-child{
+    border-right: none;
+}
+footer .footer-menu ul li a{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+footer .footer-text{
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/*=====================
+	RESPONSIVE CSS
+=======================*/
+@media (max-width: 575px) {
+    .logo {
+        text-align: center;
+    }
+    #header nav .navbar-nav{
+        text-align: center;
+    }
+    #navbarNavDropdown{
+        background:rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    
+    #header .logo img {
+        max-width: 40%;
+        height: auto;
+    }
+    #header .header-social-content {
+        text-align: center;
+        padding-top: 26px;
+    }
+    #header .header-social-content .header-social-icon li{
+        padding: 5px;
+    }
+    #header .header-social-content .header-social-text p{
+        padding-top: 0;
+        font-size: 10px;
+    }
+    #header .navbar{
+        margin-top: 10px;
+    }
+    .navbar-toggler {
+        padding: 0.15rem .55rem;
+        font-size: 15px;
+    }
+    #banner .banner-content{
+        padding: 40px;
+    }
+    #banner .banner-content h2{
+        font-size: 25px;
+    }
+    #banner .banner-content p {
+        line-height: 2;
+        font-size: 14px;
+    }
+    #banner .banner-content a {
+        font-size: 12px;
+        padding: 5px 20px;
+        border-radius: 5px;
+    }
+    #specialties {
+        padding: 25px 0;
+    }
+    #specialties h2{
+        font-size: 25px;
+    }
+    #specialties .specialties-item.first-child{
+        height: 88%;
+    }
+    .specialties-item{
+        max-width: 80%;
+        margin-bottom: 20px;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .specialties-item img{
+        width: 100%;
+    }
+    .specialties-content p{
+        line-height: 2;
+    }
+    .specialties-content h4{
+        margin-top: 10%;
+    }
+    .specialties-content a{
+        padding: 5px 20px;
+    }
+    .specialties-content span{
+        font-size: 25PX;
+    }
+
+    #food-section .food-section-content{
+        text-align: center;
+    }
+    #food-section .food-section-overlay{
+        padding: 0 15px;
+    }
+    #food-section .food-section-content h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    #food-section .food-section-content p {
+        line-height: 2;
+        margin-top: 25px;
+        font-size: 12px;
+        text-align: center;
+    }
+    #food-section .food-section-content a{
+        font-size: 12px;
+        padding: 5px 25px;
+    }
+    .food-section-img{
+        padding: 20px;
+    }
+    #gallery h2{
+        font-size: 25px;
+    }
+    #contact form{
+        padding: 30px 10px;
+        text-align: center;
+    }
+    #contact #map iframe{
+        height: 500px;
+    }
+    #contact .reservation-form-text h2{
+        font-size: 25PX;
+    }
+    #contact form a{
+        padding: 5px 25px;
+    }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+
+    .logo {
+        text-align: center;
+    }
+    #header nav .navbar-nav{
+        text-align: center;
+    }
+    #navbarNavDropdown{
+        background:rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    #header .logo img {
+        max-width: 30%;
+        height: auto;
+    }
+
+    #header .header-social-content{
+        text-align: center;
+        margin-top: 20px;
+    }
+    #header .navbar{
+        margin-top: 0;
+    }
+    #banner .banner-content{
+        padding: 60px 0;
+    }
+    #banner .banner-content h2{
+        font-size: 30px;
+    }
+    #banner .banner-content p {
+        line-height: 2.5;
+        font-size: 15px;
+    }
+    #banner .banner-content a{
+        font-size: 15px;
+        padding: 6px 25px;
+    }
+    .specialties-item img{
+        height: 270px;
+    }
+    .specialties-content p{
+        line-height: 2;
+        font-size: 10px;
+    }
+    .specialties-content span{
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    .specialties-content h4{
+        margin-top: 15%;
+        font-size: 15px;
+    }
+    .specialties-content a{
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    #food-section .food-section-overlay{
+        padding: 30px 10px;
+    }
+    #food-section .food-section-content{
+        margin-top: 0;
+        text-align: center;
+    }
+    #food-section .food-section-content h1{
+        font-size: 30px
+    }
+    #food-section .food-section-content p{
+        line-height: 2.5;
+        margin-top: 40px;
+    }
+    .food-section-img {
+        text-align: center;
+        padding: 30px 0;
+    
+    }
+    #contact #map iframe{
+        height: 500px;
+    }
+    #contact form{
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    #header .navbar{
+        margin-top: 15px;
+    }
+    #header nav .navbar-nav{
+        text-align: center;
+    }
+    #navbarNavDropdown{
+        background:rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    #banner .banner-content{
+        padding: 60px 0;
+    }
+    .specialties-content h4{
+        margin-top: 10%;
+    }
+    .specialties-content p{
+        line-height: 2;
+    }
+    .specialties-content span{
+        margin-bottom: 0;
+    }
+    #food-section .food-section-overlay{
+        padding: 25px 10px;
+    }
+    #food-section .food-section-content h1{
+        font-size: 30px;
+    }
+    #food-section .food-section-content p{
+        margin-top: 20px;
+        line-height: 2.5;
+    }
+    #food-section .food-section-img img{
+        padding: 40px 0 ;
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {  
+    
+    .specialties-item img{
+        height: 450px;
+    }
+
+
+}
+
+@media (min-width: 1200px) { 
+
+    
+    .specialties-item img{
+        height: 500px;
+    }
+   
+}
