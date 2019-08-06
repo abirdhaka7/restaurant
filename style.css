@@ -51,6 +51,7 @@ html{
     color: #222;
     font-size:18px;
     font-weight: 700;
+    text-align: right;
     text-transform: uppercase;
 }
 /*========Banner Section========*/
@@ -512,13 +513,18 @@ footer .footer-text{
         border-radius: 10px;
     }
     #header .logo img {
-        max-width: 30%;
+        max-width: 40%;
         height: auto;
     }
 
     #header .header-social-content{
         text-align: center;
-        margin-top: 20px;
+    }
+    #header .header-social-content .header-social-text p{
+        padding-top: 0;
+    }
+    #header .header-social-content .header-social-icon li a{
+        font-size: 18PX;    
     }
     #header .navbar{
         margin-top: 0;
@@ -592,6 +598,9 @@ footer .footer-text{
     #header nav .navbar-nav{
         text-align: center;
     }
+    #header .header-social-content .header-social-text p{
+        padding-top: 0;
+    }
     #navbarNavDropdown{
         background:rgba(0, 0, 0, 0.1);
         border-radius: 10px;
@@ -616,12 +625,17 @@ footer .footer-text{
     }
     #food-section .food-section-content p{
         margin-top: 20px;
-        line-height: 2.5;
+        line-height: 1.2;
+    }
+    #food-section .food-section-content a{
+        padding: 5px 25px;
     }
     #food-section .food-section-img img{
         padding: 40px 0 ;
     }
-
+    #contact form{
+        padding: 56px 30px;
+    }
 
 }
 
