@@ -241,7 +241,6 @@ html{
   display: inline-block;
   color: white;
   position: relative;
-  background-color: white;
 }
 
 .caption p:first-child{
@@ -313,7 +312,7 @@ html{
 }
 #contact .reservation-form-content{
     margin-top: 20px;
-    position: absolut;
+    position: absolute;
 }
 #contact .reservation-form{
     background: url(assets/img/food-section-background.jpg)no-repeat center;
